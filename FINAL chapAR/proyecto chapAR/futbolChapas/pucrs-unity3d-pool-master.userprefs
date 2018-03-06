@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MuroIzquierda.cs">
+    <Files>
+      <File FileName="Assets\Scripts\IGameObjectState.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\shooterController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\audioController.cs" Line="22" Column="33" />
+      <File FileName="Assets\Scripts\HasPerdido.cs" Line="22" Column="22" />
+      <File FileName="Assets\Scripts\MainPanelController.cs" Line="12" Column="1" />
+      <File FileName="Assets\Scripts\MuroAbajo.cs" Line="24" Column="48" />
+      <File FileName="Assets\Scripts\MuroArriba.cs" Line="24" Column="49" />
+      <File FileName="Assets\Scripts\MuroIzquierda.cs" Line="24" Column="38" />
+      <File FileName="Assets\Scripts\ExplosionController.cs" Line="24" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
