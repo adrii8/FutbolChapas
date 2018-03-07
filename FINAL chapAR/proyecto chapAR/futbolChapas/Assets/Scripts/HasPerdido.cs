@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HasPerdido : MonoBehaviour {
 
 	public AudioClip saw;
 	public Text m_MyText;
+	public void LoadScene (int scene){
+		SceneManager.LoadScene (scene);
+	}
+	//IEnumerator Wait(float duration)
 
 
 	// Use this for initialization
@@ -20,12 +25,10 @@ public class HasPerdido : MonoBehaviour {
 		if (collision.gameObject.tag == "bola") {
 			GetComponent<AudioSource> ().Play ();
 			m_MyText.text = "Vuelve a intentarlo";
-
+			//yield return new WaitForSeconds (5);
+			LoadScene (0);
+				
 		}
-
 	}
-	// Update is called once per frame
-	void Update () {
 
-	}
 }
