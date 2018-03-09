@@ -8,16 +8,20 @@ public class HasPerdido : MonoBehaviour {
 
 	public AudioClip saw;
 	public Text m_MyText;
+	private AudioSource audio;
+	private bool itHasSound;
 	public void LoadScene (int scene){
 		SceneManager.LoadScene (scene);
 	}
-	//IEnumerator Wait(float duration)
 
 
 	// Use this for initialization
 	void Start () {
 		GetComponent<AudioSource> ().playOnAwake = false;
 		GetComponent<AudioSource> ().clip = saw;
+		audio = GetComponent<AudioSource> ();
+		itHasSound = false;
+
 	}
 
 
@@ -25,10 +29,15 @@ public class HasPerdido : MonoBehaviour {
 		if (collision.gameObject.tag == "bola") {
 			GetComponent<AudioSource> ().Play ();
 			m_MyText.text = "Vuelve a intentarlo";
-			//yield return new WaitForSeconds (5);
-			LoadScene (0);
-				
+			itHasSound = true;
 		}
 	}
+	void Update (){
 
+
+		if (!audio.isPlaying && itHasSound)
+		{
+			LoadScene (0);
+		}
+	}
 }
